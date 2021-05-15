@@ -337,10 +337,10 @@
                     {%if object.youtube%}data-youtube="{{object.youtube}}"{%endif%}
                     {%if object.long_desc%}data-long_desc="{{object.long_desc|highlight_words}}"{%endif%}
                     {%if object.github%}data-github="{{object.github}}"{%endif%}
-                    data-img_url="{{object.thumbnail.url}}"
+                    data-img_url="{%static '/uploaded_media/'|add:object.thumbnail %}"
                     >
                         <div class="img-container">
-                            <img src="{{object.thumbnail.url}}" alt="Me"></img>
+                            <img src="{%static '/uploaded_media/'|add:object.thumbnail %}" alt="Project Image"></img>
                         </div>
                         <div class="details">
                             <h3>{{object.title}}</h3>

@@ -20,7 +20,7 @@ class Project(models.Model):
     website = models.CharField(max_length=100,blank=True,null=True)
     github = models.CharField(max_length=100,blank=True,null=True)
     youtube =  models.CharField(max_length=100,blank=True,null=True)
-    thumbnail = models.ImageField()
+    thumbnail = models.CharField(max_length=100)
     
     def __str__(self):
         return self.title

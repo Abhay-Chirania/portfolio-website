@@ -362,15 +362,6 @@ nav ul li a.resume:hover {
   background: var(--hover_back);
 }
 
-.mouse-sec {
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 3.2em;
-  opacity: 0.8;
-}
-
 .mouse {
   -webkit-animation: hero_anim 800ms forwards ease-out;
           animation: hero_anim 800ms forwards ease-out;
@@ -379,10 +370,8 @@ nav ul li a.resume:hover {
   border: 2px solid var(--secondary);
   border-radius: 20px;
   position: absolute;
-  margin-left: 50%;
+  margin-left: 45vw;
   margin-top: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   opacity: 0;
   display: none;
 }

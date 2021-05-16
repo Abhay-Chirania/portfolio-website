@@ -284,13 +284,6 @@ li{
     }
 }
 
-.mouse-sec
-{
-    display: none;
-    justify-content: center;
-    margin-top: 3.2em;
-    opacity: 0.8;
-}
 .mouse{
     animation: hero_anim 800ms forwards ease-out;
     width: 38px;
@@ -298,9 +291,8 @@ li{
     border: 2px solid var(--secondary);
     border-radius: 20px;
     position: absolute;
-    margin-left: 50%;
+    margin-left: 45vw;
     margin-top: 50px;
-    transform: translateX(-50%);
     opacity: 0;
     display: none;
 }

@@ -13,6 +13,7 @@
     <meta name="msapplication-navbutton-color" content="#010B23">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#010B23">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
@@ -447,6 +448,7 @@
   $(document).ready(function(){
 
     var scrollLink = $('.scroll-smooth');
+    var scrollLogo = $('.scroll-logo');
 
     scrollLink.click(function(e){
       e.preventDefault();
@@ -456,9 +458,6 @@
 
     });
 
-
-    var scrollLogo = $('.scroll-logo');
-
     scrollLogo.click(function(e){
       e.preventDefault();
       $('body,html').animate({
@@ -467,25 +466,6 @@
 
     });
 
-
-    $(window).scroll(function(){
-
-      var scrollbarLocation = $(this).scrollTop();
-      if(scrollbarLocation<350){
-        $(".nav-links li a").removeClass('scroll-active');
-      }
-      else{
-      scrollLink.each(function(){
-
-        var sectionOffset = $(this.hash).offset().top - 360;
-        if (sectionOffset<=scrollbarLocation){
-          $(".nav-links li a").removeClass('scroll-active');
-          $(this).addClass('scroll-active');
-        }
-
-      });
-    }
-    });
   });
 </script>
 

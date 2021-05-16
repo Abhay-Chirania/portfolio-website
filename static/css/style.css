@@ -172,10 +172,6 @@ nav ul li a:hover {
   color: var(--primary);
 }
 
-nav ul li .scroll-active {
-  color: var(--primary);
-}
-
 nav ul li a.resume {
   color: var(--primary);
   background: transparent;

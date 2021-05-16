@@ -32,10 +32,10 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
     //scroll-snap-type: y mandatory;
     //overflow-y: scroll;
-    scroll-padding-top: 1.5em;
+    scroll-padding-top: 2em;
 
 
 }
@@ -131,17 +131,23 @@ li{
     ul{
         display: flex;
         justify-content: space-between;
+        
 
         li{
             padding-left:2.6em ;
             a{
-                font-size: 0.8em;
                 color: var(--secondary);
+                font-size: 0.8em;
                 span{color: var(--primary);}
                 &:hover{
                     color: var(--primary);
                 }
             }
+
+            .scroll-active{
+                color: var(--primary);
+            }
+
             a.resume{
                 color: var(--primary);
                 background: transparent;

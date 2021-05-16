@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-@nsoty94v83gc^pur#+vcwk-j+0&ujn&f$@*1_hqs*x#9k=6(0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1' , 'abhaychirania.herokuapp.com','abhaychirania.com','www.abhaychirania.com']
+ALLOWED_HOSTS = ['127.0.0.1' , '192.168.1.68' 'abhaychirania.herokuapp.com','abhaychirania.com','www.abhaychirania.com']
 
 
 # Application definiti
